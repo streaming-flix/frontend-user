@@ -8,6 +8,7 @@ function LandingPage() {
         <div>
 <Navbar />
             <Jumbotron />
+            <h1>Trending</h1>
             <CardMovie/>
         </div>
     );

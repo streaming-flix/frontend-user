@@ -27,10 +27,11 @@ import React from "react";
 import { MDBCarousel, MDBCarouselCaption, MDBCarouselInner, MDBCarouselItem, MDBView, MDBMask, MDBContainer } from
 "mdbreact";
 import BadGenius from "../assets/images/Bad-genius.jpg";
+import { Jumbotron} from "react-bootstrap";
 
 const Jumbo = () => {
   return (
-    <MDBContainer>
+    <Jumbotron fluid>
       <MDBCarousel
       activeItem={1}
       length={3}
@@ -41,10 +42,10 @@ const Jumbo = () => {
       <MDBCarouselInner>
         <MDBCarouselItem itemId="1">
           <MDBView>
-            <img
+          <img
               className="d-block w-100"
-              src="https://streamingan.id/wp-content/uploads/2020/07/Serial-Bad-Genius-1024x576.jpg"
-              alt="First slide"
+              src="https://mdbootstrap.com/img/Photos/Slides/img%20(6).jpg"
+              alt="Second slide"
             />
           <MDBMask overlay="black-light" />
           </MDBView>
@@ -83,7 +84,7 @@ const Jumbo = () => {
         </MDBCarouselItem>
       </MDBCarouselInner>
     </MDBCarousel>
-    </MDBContainer>
+    </Jumbotron>
   );
 }
 

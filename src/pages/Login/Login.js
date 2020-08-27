@@ -1,16 +1,18 @@
 import React from "react";
 import { MDBContainer, MDBRow, MDBCol, MDBCard, MDBCardBody, MDBInput, MDBBtn, MDBIcon, MDBModalFooter } from 'mdbreact';
 import styles from "./Login.css";
+import Registration from "../Registration/Registration"
+import {Link} from "react-router-dom"
 
 const Login = () => {
   return (
-    <MDBContainer>
+    <MDBContainer className='m-3'>
       <MDBRow>
-        <MDBCol md="6">
+        <MDBCol md="6" className='m-auto'>
           <MDBCard>
             <MDBCardBody className="mx-4">
               <div className="text-center">
-                <h3 className="dark-grey-text mb-5">
+                <h3 className="dark-grey-text mb-2">
                   <strong>Sign in</strong>
                 </h3>
               </div>
@@ -37,14 +39,7 @@ const Login = () => {
                 </a>
               </p>
               <div className="text-center mb-3">
-                <MDBBtn
-                  type="button"
-                  gradient="blue"
-                  rounded
-                  className="btn-block z-depth-1a"
-                >
-                  Sign in
-                </MDBBtn>
+              <MDBBtn color="primary">Sign In</MDBBtn>
               </div>
               <p className="font-small dark-grey-text text-right d-flex justify-content-center mb-3 pt-2">
 
@@ -80,10 +75,10 @@ const Login = () => {
             <MDBModalFooter className="mx-5 pt-3 mb-1">
               <p className="font-small grey-text d-flex justify-content-end">
                 Not a member?
-                <a href="#!" className="blue-text ml-1">
+                < Link to="/Registration" className="blue-text ml-1">
 
                   Sign Up
-                </a>
+                </Link>
               </p>
             </MDBModalFooter>
           </MDBCard>

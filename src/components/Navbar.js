@@ -4,7 +4,7 @@ import * as ReactBootStrap from "react-bootstrap";
 
 function Navbar() {
     return(
-        <ReactBootStrap.Navbar collapseOnSelect expand="md" bg="dark" variant="dark">
+        <ReactBootStrap.Navbar collapseOnSelect expand="md" bg="dark" variant="dark" className='fixed-top'>
         <ReactBootStrap.Navbar.Brand href="#home">StreamingFlix</ReactBootStrap.Navbar.Brand>
         <ReactBootStrap.Navbar.Toggle aria-controls="responsive-navbar-nav" />
         <ReactBootStrap.Navbar.Collapse id="responsive-navbar-nav">
