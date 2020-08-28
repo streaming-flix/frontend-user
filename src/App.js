@@ -1,7 +1,6 @@
 import React from 'react';
 import logo from './logo.svg';
 import './App.css';
-// import Navbar from './components/Navbar';
 import Jumbo from './components/Jumbo';
 import Login from './pages/Login/Login';
 import LandingPage from './pages/LandingPage/LandingPage';
@@ -17,12 +16,15 @@ function App() {
       <Route exact path="/Registration">
                             <Registration />
                         </Route>
-      {/* <h1>Hello</h1> */}
-      {/* <Navbar/> */}
-
-      {/* <Jumbo/> */}
-      {/* <LandingPage/> */}
-      {/* <DetailMovie /> */}
+     
+      <Route exact path="/">
+      <LandingPage/>
+      </Route>
+      <Route exact path="/DetailMovie">
+      <DetailMovie /> 
+      </Route>
+      
+     
       <Route exact path="/Login">
       <Login/>
       </Route>

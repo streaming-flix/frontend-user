@@ -1,5 +1,6 @@
 import React from "react";
 import * as ReactBootStrap from "react-bootstrap";
+import {Link} from "react-router-dom"
 
 
 function Navbar() {
@@ -25,7 +26,7 @@ function Navbar() {
     </ReactBootStrap.Form>
           </ReactBootStrap.Nav>
           <ReactBootStrap.Nav>
-            <ReactBootStrap.Nav.Link href="#deets">Login</ReactBootStrap.Nav.Link>
+            <ReactBootStrap.Nav.Link> <Link to="/Login">Login</Link></ ReactBootStrap.Nav.Link>
             {/* <ReactBootStrap.Nav.Link eventKey={2} href="#memes">
               Dank memes
             </ReactBootStrap.Nav.Link> */}

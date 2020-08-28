@@ -4,9 +4,9 @@ import gots8 from '../assets/images/GoTS8.jpg';
 
 const CardMovie = () => {
   return (
-    <CardColumns style={{ padding: '8em'}}>
+    <CardColumns style={{ padding: '2em', l:'2em'}}>
       <Card style={{ width: '10rem'}}>
-        <Card.Img style={{ height: '12rem'}} variant="top" src={gots8} />
+        <Card.Img style={{ height: '10rem'}} variant="top" src={gots8} />
         <Card.Body style={{ textAlign: 'left', margin: 0, padding: '0.5em' }}>
           <Card.Text style={{ fontSize: '0.8em', fontWeight: 'bold' }}>
             Game Of Thrones Season 8
@@ -14,7 +14,7 @@ const CardMovie = () => {
         </Card.Body>
       </Card>
       <Card style={{ width: '10rem'}}>
-        <Card.Img style={{ height: '12rem'}} variant="top" src={gots8} />
+        <Card.Img style={{ height: '10rem'}} variant="top" src={gots8} />
         <Card.Body style={{ textAlign: 'left', margin: 0, padding: '0.5em' }}>
           <Card.Text style={{ fontSize: '0.8em', fontWeight: 'bold' }}>
             Game Of Thrones Season 8
@@ -22,7 +22,7 @@ const CardMovie = () => {
         </Card.Body>
       </Card>
       <Card style={{ width: '10rem'}}>
-        <Card.Img style={{ height: '12rem'}} variant="top" src={gots8} />
+        <Card.Img style={{ height: '10rem'}} variant="top" src={gots8} />
         <Card.Body style={{ textAlign: 'left', margin: 0, padding: '0.5em' }}>
           <Card.Text style={{ fontSize: '0.8em', fontWeight: 'bold' }}>
             Game Of Thrones Season 8
@@ -30,43 +30,23 @@ const CardMovie = () => {
         </Card.Body>
       </Card>
       <Card style={{ width: '10rem'}}>
-        <Card.Img style={{ height: '12rem'}} variant="top" src={gots8} />
+        <Card.Img style={{ height: '10rem'}} variant="top" src={gots8} />
         <Card.Body style={{ textAlign: 'left', margin: 0, padding: '0.5em' }}>
           <Card.Text style={{ fontSize: '0.8em', fontWeight: 'bold' }}>
             Game Of Thrones Season 8
           </Card.Text>
         </Card.Body>
       </Card>
-
       <Card style={{ width: '10rem'}}>
-        <Card.Img style={{ height: '12rem'}} variant="top" src={gots8} />
+        <Card.Img style={{ height: '10rem'}} variant="top" src={gots8} />
         <Card.Body style={{ textAlign: 'left', margin: 0, padding: '0.5em' }}>
           <Card.Text style={{ fontSize: '0.8em', fontWeight: 'bold' }}>
             Game Of Thrones Season 8
           </Card.Text>
         </Card.Body>
       </Card>
-
       <Card style={{ width: '10rem'}}>
-        <Card.Img style={{ height: '12rem'}} variant="top" src={gots8} />
-        <Card.Body style={{ textAlign: 'left', margin: 0, padding: '0.5em' }}>
-          <Card.Text style={{ fontSize: '0.8em', fontWeight: 'bold' }}>
-            Game Of Thrones Season 8
-          </Card.Text>
-        </Card.Body>
-      </Card>
-
-      <Card style={{ width: '10rem'}}>
-        <Card.Img style={{ height: '12rem'}} variant="top" src={gots8} />
-        <Card.Body style={{ textAlign: 'left', margin: 0, padding: '0.5em' }}>
-          <Card.Text style={{ fontSize: '0.8em', fontWeight: 'bold' }}>
-            Game Of Thrones Season 8
-          </Card.Text>
-        </Card.Body>
-      </Card>
-
-      <Card style={{ width: '10rem'}}>
-        <Card.Img style={{ height: '12rem'}} variant="top" src={gots8} />
+        <Card.Img style={{ height: '10rem'}} variant="top" src={gots8} />
         <Card.Body style={{ textAlign: 'left', margin: 0, padding: '0.5em' }}>
           <Card.Text style={{ fontSize: '0.8em', fontWeight: 'bold' }}>
             Game Of Thrones Season 8

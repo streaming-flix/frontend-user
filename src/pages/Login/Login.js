@@ -1,7 +1,5 @@
 import React from "react";
 import { MDBContainer, MDBRow, MDBCol, MDBCard, MDBCardBody, MDBInput, MDBBtn, MDBIcon, MDBModalFooter } from 'mdbreact';
-import styles from "./Login.css";
-import Registration from "../Registration/Registration"
 import {Link} from "react-router-dom"
 
 const Login = () => {
@@ -12,11 +10,13 @@ const Login = () => {
           <MDBCard>
             <MDBCardBody className="mx-4">
               <div className="text-center">
-                <h3 className="dark-grey-text mb-2">
-                  <strong>Sign in</strong>
-                </h3>
+                <h5 className="dark-grey-text mb-2">
+                  <strong>Login to SteamingFlix</strong>
+                </h5>
+                <p>Great to see you again!</p>
               </div>
               <MDBInput
+              placeholder="email@gmail.com"
                 label="Your email"
                 group
                 type="email"
@@ -25,19 +25,20 @@ const Login = () => {
                 success="right"
               />
               <MDBInput
+              placeholder="password"
                 label="Your password"
                 group
                 type="password"
                 validate
                 containerClass="mb-0"
               />
-              <p className="font-small blue-text d-flex justify-content-end pb-3">
+              {/* <p className="font-small blue-text d-flex justify-content-end pb-3">
                 Forgot
                 <a href="#!" className="blue-text ml-1">
 
                   Password?
                 </a>
-              </p>
+              </p> */}
               <div className="text-center mb-3">
               <MDBBtn color="primary">Sign In</MDBBtn>
               </div>
