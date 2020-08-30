@@ -6,11 +6,11 @@ import {Link} from "react-router-dom"
 function Navbar() {
     return(
         <ReactBootStrap.Navbar collapseOnSelect expand="md" bg="dark" variant="dark" className='fixed-top'>
-        <ReactBootStrap.Navbar.Brand href="#home">StreamingFlix</ReactBootStrap.Navbar.Brand>
+        <ReactBootStrap.Navbar.Brand ><Link to='/'>StreamingFlix</Link></ReactBootStrap.Navbar.Brand>
         <ReactBootStrap.Navbar.Toggle aria-controls="responsive-navbar-nav" />
         <ReactBootStrap.Navbar.Collapse id="responsive-navbar-nav">
           <ReactBootStrap.Nav className="mr-auto">
-            <ReactBootStrap.Nav.Link href="#features">Home</ReactBootStrap.Nav.Link>
+            <ReactBootStrap.Nav.Link ><Link to='/'>Home</Link></ReactBootStrap.Nav.Link>
             <ReactBootStrap.Nav.Link href="#features">TV Shows</ReactBootStrap.Nav.Link>
             <ReactBootStrap.Nav.Link href="#pricing">Movies</ReactBootStrap.Nav.Link>
             <ReactBootStrap.NavDropdown title="My List" id="collasible-nav-dropdown">

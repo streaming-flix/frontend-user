@@ -59,14 +59,6 @@ const Login = () => {
                   type="button"
                   color="white"
                   rounded
-                  className="mr-md-3 z-depth-1a"
-                >
-                  <MDBIcon fab icon="twitter" className="blue-text" />
-                </MDBBtn>
-                <MDBBtn
-                  type="button"
-                  color="white"
-                  rounded
                   className="z-depth-1a"
                 >
                   <MDBIcon fab icon="google-plus-g" className="blue-text" />

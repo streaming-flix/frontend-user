@@ -8,14 +8,14 @@ function DetailMovie() {
         <div>
           <Navbar/>
           <div class="embed-responsive embed-responsive-16by9">
-          <h3>Trailer</h3>
-  <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/zpOULjyy-n8?rel=0" allowfullscreen></iframe>
+          <card><h3>Trailer</h3>
+  <iframe  class="embed-responsive-item" src="https://www.youtube.com/embed/zpOULjyy-n8?rel=0" allowfullscreen></iframe></card>
 </div>
-      <Button variant="info">Watch Full Movie</Button>{' '}
+      <Button style={{ margin: '2em'}} variant="info">Watch Full Movie</Button>{' '}
 <Card>
   <Card.Header>Title Movie (year)</Card.Header>
-  <Card.Img style={{ height: '16rem', width: '14rem'}} variant="top" src="holder.js/100px180" />
-  <Card.Body>
+  <Card.Img className="card text-left" style={{ height: '16rem', width: '14rem'}} variant="top" src="holder.js/100px180" />
+  <Card.Text className="card text-top">
     <blockquote className="blockquote mb-0">
       <p>
         Rating
@@ -33,7 +33,7 @@ function DetailMovie() {
        director
       </p>
     </blockquote>
-  </Card.Body>
+  </Card.Text>
 </Card>
 
 

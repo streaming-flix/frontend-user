@@ -1,18 +1,19 @@
 import React from "react";
 import { Card, CardColumns} from "react-bootstrap";
 import gots8 from '../assets/images/GoTS8.jpg';
+import {Link} from 'react-router-dom'
 
 const CardMovie = () => {
   return (
-    <CardColumns style={{ padding: '2em', l:'2em'}}>
-      <Card style={{ width: '10rem'}}>
+    <CardColumns  className="my-carousel" style={{ padding: '2em', l:'2em'}}>
+      <Link to="/DetailMovie"><Card className="my-carousel" style={{ width: '10rem'}}>
         <Card.Img style={{ height: '10rem'}} variant="top" src={gots8} />
         <Card.Body style={{ textAlign: 'left', margin: 0, padding: '0.5em' }}>
           <Card.Text style={{ fontSize: '0.8em', fontWeight: 'bold' }}>
             Game Of Thrones Season 8
           </Card.Text>
         </Card.Body>
-      </Card>
+      </Card></Link>
       <Card style={{ width: '10rem'}}>
         <Card.Img style={{ height: '10rem'}} variant="top" src={gots8} />
         <Card.Body style={{ textAlign: 'left', margin: 0, padding: '0.5em' }}>
