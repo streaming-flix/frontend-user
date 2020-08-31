@@ -5,16 +5,21 @@ import Jumbo from './components/Jumbo';
 import Login from './pages/Login/Login';
 import LandingPage from './pages/LandingPage/LandingPage';
 import DetailMovie from './pages/DetailMovie/DetailMovie';
-import Registration from './pages/Registration/Registration'
+import Registrasi from './pages/Registrasi/Registrasi'
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+import { Provider } from 'react-redux';
+import { createStore, applyMiddleware } from 'redux';
+import thunk from 'redux-thunk';
+import reducers from './redux/reducers';
 
 
 function App() {
   return (
     <div className="App">
+      <Provider store={createStore(reducers, applyMiddleware(thunk))}>
       <Router>
-      <Route exact path="/Registration">
-                            <Registration />
+      <Route exact path="/Registrasi">
+                            <Registrasi />
                         </Route>
      
       <Route exact path="/">
@@ -29,7 +34,9 @@ function App() {
       <Login/>
       </Route>
       </Router>
+      </Provider>
     </div>
+
   );
 }
 
