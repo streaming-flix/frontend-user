@@ -14,7 +14,7 @@ const registerUser = (payload) => {
 
 const userLogin = (form, history) => async (dispatch) => {
     try {
-        const url = 'http://localhost:5002';
+        const url = `${process.env.REACT_APP_BACKEND_ENDPOINT}/api/user/login`;
         const options = {
             method: 'POST',
             body: JSON.stringify(form),
@@ -23,7 +23,7 @@ const userLogin = (form, history) => async (dispatch) => {
             },
         };
         console.log(url, 'url')
-        const response = await fetch(`${url}/api/user/login`, options);
+        const response = await fetch(url, options);
         const result = await response.json();
         await jwt_decode(result.result);
 
@@ -50,7 +50,7 @@ const userLogin = (form, history) => async (dispatch) => {
 };
 
 const register = (formData, history) => async (dispatch) => {
-    const url = 'http://localhost:5002/api/user';
+    const url = `${process.env.REACT_APP_BACKEND_ENDPOINT}/api/user`;
     const options = {
         method: 'POST',
         body: JSON.stringify(formData),

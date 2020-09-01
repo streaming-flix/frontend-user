@@ -1,5 +1,7 @@
 import React from 'react';
 import Login from './pages/Login/Login';
+import Navbar from './components/Navbar';
+import Footer from './components/Footer';
 import LandingPage from './pages/LandingPage/LandingPage';
 import DetailMovie from './pages/DetailMovie/DetailMovie';
 import Registrasi from './pages/Registrasi/Registrasi'
@@ -14,7 +16,9 @@ function App() {
   return (
     <div className="App">
       <Provider store={createStore(reducers, applyMiddleware(thunk))}>
+        
         <Router>
+        <Navbar/>
           <Route exact path="/">
             <LandingPage/>
           </Route>
@@ -27,6 +31,7 @@ function App() {
           <Route exact path="/DetailMovie">
             <DetailMovie /> 
           </Route>
+          <Footer/>
         </Router>
       </Provider>
     </div>

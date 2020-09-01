@@ -1,6 +1,7 @@
 import React from "react";
 import Navbar from "../../components/Navbar";
 import { Button, Card } from "react-bootstrap";
+import poster from "../../assets/images/Bad-genius.jpg"
 
 function DetailMovie() {
     return (
@@ -20,8 +21,8 @@ function DetailMovie() {
       <div>
 <div style={{display:'flex', flexWrap:'wrap', justifyContent:'space-around'}}>
   <Card.Header style={{width:'100%'}}>Title Movie (year)</Card.Header>
-  <Card.Img  style={{ height: '16rem', width: '14rem'}} variant="top" src="holder.js/100px180" />
-  <Card.Text >
+  <Card.Img  style={{ marginTop:'2rem', height: '16rem', width: '14rem'}} variant="top" src={poster} />
+  <Card.Text style={{ marginTop:'2rem'}}>
     <blockquote className="blockquote mb-0">
       <p>
         Rating

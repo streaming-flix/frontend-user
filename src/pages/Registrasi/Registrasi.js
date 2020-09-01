@@ -86,7 +86,7 @@
 import React, { useState } from 'react';
 import Swal from 'sweetalert2';
 import { useDispatch } from 'react-redux';
-import { register } from '../../redux/actions/Registration';
+import { register} from '../../redux/actions/Registration';
 import { useHistory, Link } from 'react-router-dom';
 import '../../assets/css/Login.css';
 // import Registration from '../../redux/reducers/Registration';
@@ -132,7 +132,7 @@ console.log(form)
     };
 
     return (
-        <div className="body">
+        <div style={{marginTop:'5em', justifyContent:'center'}} className="body">
             <section className="hero is-success is-fullheight">
                 <div className="hero-body">
                     <div className="container has-text-centered">
