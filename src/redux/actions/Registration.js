@@ -14,7 +14,7 @@ const registerUser = (payload) => {
 
 const userLogin = (form, history) => async (dispatch) => {
     try {
-        const url = 'http://localhost:5002' ;
+        const url = 'http://localhost:5002';
         const options = {
             method: 'POST',
             body: JSON.stringify(form),
@@ -50,7 +50,7 @@ const userLogin = (form, history) => async (dispatch) => {
 };
 
 const register = (formData, history) => async (dispatch) => {
-    const url = `${process.env.REACT_APP_API}/user/`;
+    const url = 'http://localhost:5002/api/user';
     const options = {
         method: 'POST',
         body: JSON.stringify(formData),
@@ -58,7 +58,7 @@ const register = (formData, history) => async (dispatch) => {
             'Content-type': 'application/json',
         },
     };
-
+    console.log(url, 'url')
     const response = await fetch(url, options);
     const result = await response.json();
 

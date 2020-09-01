@@ -126,7 +126,7 @@ function Registrasi() {
             }
         }
     };
-
+console.log(form)
     const handleChange = (event) => {
         setForm({ ...form, [event.target.name]: event.target.value });
     };
@@ -204,7 +204,7 @@ function Registrasi() {
                                             />
                                         </div>
                                     </div>
-                                    <button className="button is-block is-info is-fullwidth">
+                                    <button type="submit" className="button is-block is-info is-fullwidth">
                                         Sign Up{' '}
                                         <i
                                             className="fa fa-sign-in"

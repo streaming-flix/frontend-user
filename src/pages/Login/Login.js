@@ -105,7 +105,7 @@ function Login() {
     };
 
     const handleChange = (event) => {
-        setForm({ ...form, [event.target.name]: event.target.value });
+        setForm({ ...form, [event.target.id]: event.target.value });
     };
     console.log(form)
 
@@ -170,7 +170,7 @@ function Login() {
                                             />
                                         </div>
                                     </div>
-                                    <button type="submit" className="button is-block is-info is-fullwidth">
+                                    <button className="button is-block is-info is-fullwidth">
                                         Login
                                     </button>
                                     <br />
