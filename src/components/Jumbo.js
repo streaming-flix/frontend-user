@@ -24,9 +24,8 @@
 
 // export default Jumbo;
 import React from "react";
-import { MDBCarousel, MDBCarouselCaption, MDBCarouselInner, MDBCarouselItem, MDBView, MDBMask, MDBContainer } from
+import { MDBCarousel, MDBCarouselCaption, MDBCarouselInner, MDBCarouselItem, MDBView, MDBMask, } from
 "mdbreact";
-import BadGenius from "../assets/images/Bad-genius.jpg";
 import { Jumbotron} from "react-bootstrap";
 
 const Jumbo = () => {

@@ -5,8 +5,8 @@ import {Link} from 'react-router-dom'
 
 const CardMovie = () => {
   return (
-    <CardColumns  className="my-carousel" style={{ padding: '2em', l:'2em'}}>
-      <Link to="/DetailMovie"><Card className="my-carousel" style={{ width: '10rem'}}>
+    <CardColumns  className="my-carousel" style={{ display: 'flex', padding: '2em', margin:'2em'}}>
+      <Link to="/DetailMovie"><Card className="my-carousel" style={{  width: '10rem'}}>
         <Card.Img style={{ height: '10rem'}} variant="top" src={gots8} />
         <Card.Body style={{ textAlign: 'left', margin: 0, padding: '0.5em' }}>
           <Card.Text style={{ fontSize: '0.8em', fontWeight: 'bold' }}>
@@ -14,46 +14,46 @@ const CardMovie = () => {
           </Card.Text>
         </Card.Body>
       </Card></Link>
-      <Card style={{ width: '10rem'}}>
+      <Link to="/DetailMovie"><Card className="my-carousel" style={{  width: '10rem'}}>
         <Card.Img style={{ height: '10rem'}} variant="top" src={gots8} />
         <Card.Body style={{ textAlign: 'left', margin: 0, padding: '0.5em' }}>
           <Card.Text style={{ fontSize: '0.8em', fontWeight: 'bold' }}>
             Game Of Thrones Season 8
           </Card.Text>
         </Card.Body>
-      </Card>
-      <Card style={{ width: '10rem'}}>
+      </Card></Link>
+      <Link to="/DetailMovie"><Card className="my-carousel" style={{  width: '10rem'}}>
         <Card.Img style={{ height: '10rem'}} variant="top" src={gots8} />
         <Card.Body style={{ textAlign: 'left', margin: 0, padding: '0.5em' }}>
           <Card.Text style={{ fontSize: '0.8em', fontWeight: 'bold' }}>
             Game Of Thrones Season 8
           </Card.Text>
         </Card.Body>
-      </Card>
-      <Card style={{ width: '10rem'}}>
+      </Card></Link>
+      <Link to="/DetailMovie"><Card className="my-carousel" style={{  width: '10rem'}}>
         <Card.Img style={{ height: '10rem'}} variant="top" src={gots8} />
         <Card.Body style={{ textAlign: 'left', margin: 0, padding: '0.5em' }}>
           <Card.Text style={{ fontSize: '0.8em', fontWeight: 'bold' }}>
             Game Of Thrones Season 8
           </Card.Text>
         </Card.Body>
-      </Card>
-      <Card style={{ width: '10rem'}}>
+      </Card></Link>
+      <Link to="/DetailMovie"><Card className="my-carousel" style={{  width: '10rem'}}>
         <Card.Img style={{ height: '10rem'}} variant="top" src={gots8} />
         <Card.Body style={{ textAlign: 'left', margin: 0, padding: '0.5em' }}>
           <Card.Text style={{ fontSize: '0.8em', fontWeight: 'bold' }}>
             Game Of Thrones Season 8
           </Card.Text>
         </Card.Body>
-      </Card>
-      <Card style={{ width: '10rem'}}>
+      </Card></Link>
+      <Link to="/DetailMovie"><Card className="my-carousel" style={{  width: '10rem'}}>
         <Card.Img style={{ height: '10rem'}} variant="top" src={gots8} />
         <Card.Body style={{ textAlign: 'left', margin: 0, padding: '0.5em' }}>
           <Card.Text style={{ fontSize: '0.8em', fontWeight: 'bold' }}>
             Game Of Thrones Season 8
           </Card.Text>
         </Card.Body>
-      </Card>
+      </Card></Link>
       
     </CardColumns>
   );

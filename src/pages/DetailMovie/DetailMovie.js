@@ -1,6 +1,6 @@
 import React from "react";
 import Navbar from "../../components/Navbar";
-import { Jumbotron , Image, Container, ResponsiveEmbed, Button, Card } from "react-bootstrap";
+import { Button, Card } from "react-bootstrap";
 
 function DetailMovie() {
     return (
@@ -11,7 +11,8 @@ function DetailMovie() {
            <div class="embed-responsive embed-responsive-16by9">
               <card>
                 <Card.Header>Title Movie (year)</Card.Header>
-                <iframe  class="embed-responsive-item" src="https://www.youtube.com/embed/zpOULjyy-n8?rel=0" allowfullscreen></iframe>
+                
+                <iframe width="736" height="414" src="https://www.youtube.com/embed/c34Bw_bKbF0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
               </card>
             </div>
           </div>

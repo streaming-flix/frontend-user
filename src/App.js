@@ -1,12 +1,10 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
-import Jumbo from './components/Jumbo';
 import Login from './pages/Login/Login';
 import LandingPage from './pages/LandingPage/LandingPage';
 import DetailMovie from './pages/DetailMovie/DetailMovie';
 import Registrasi from './pages/Registrasi/Registrasi'
-import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+import { BrowserRouter as Router,  Route } from "react-router-dom";
 import { Provider } from 'react-redux';
 import { createStore, applyMiddleware } from 'redux';
 import thunk from 'redux-thunk';
