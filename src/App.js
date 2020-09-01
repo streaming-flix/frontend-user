@@ -1,25 +1,42 @@
 import React from 'react';
 import logo from './logo.svg';
 import './App.css';
+import Jumbo from './components/Jumbo';
+import Login from './pages/Login/Login';
+import LandingPage from './pages/LandingPage/LandingPage';
+import DetailMovie from './pages/DetailMovie/DetailMovie';
+import Registrasi from './pages/Registrasi/Registrasi'
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+import { Provider } from 'react-redux';
+import { createStore, applyMiddleware } from 'redux';
+import thunk from 'redux-thunk';
+import reducers from './redux/reducers';
+
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Provider store={createStore(reducers, applyMiddleware(thunk))}>
+      <Router>
+      <Route exact path="/Registrasi">
+                            <Registrasi />
+                        </Route>
+     
+      <Route exact path="/">
+      <LandingPage/>
+      </Route>
+      <Route exact path="/DetailMovie">
+      <DetailMovie /> 
+      </Route>
+      
+     
+      <Route exact path="/Login">
+      <Login/>
+      </Route>
+      </Router>
+      </Provider>
     </div>
+
   );
 }
 
