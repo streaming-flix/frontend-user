@@ -11,8 +11,7 @@ function DetailMovie() {
            <div class="embed-responsive embed-responsive-16by9">
               <card>
                 <Card.Header>Title Movie (year)</Card.Header>
-                
-                <iframe width="736" height="414" src="https://www.youtube.com/embed/c34Bw_bKbF0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <iframe title="Trailer movie" width="736" height="414" src="https://www.youtube.com/embed/c34Bw_bKbF0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
               </card>
             </div>
           </div>
