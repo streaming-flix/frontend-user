@@ -1,9 +1,27 @@
 import React from "react";
+// , {useEffect, useState}
 import * as ReactBootStrap from "react-bootstrap";
-import {Link} from "react-router-dom"
+import {Link} from "react-router-dom";
+// import { fetchGetAllMovies, fetchSearchMovie} from '../redux/actions';
+// import { useDispatch, useSelector } from 'react-redux';
 
 
 function Navbar() {
+  // const dispatch = useDispatch();
+  // const [input, setInput] = useState('');
+  // const movies = useSelector((state) => state.getallmovies);
+
+  // const handleChange = (event) => {
+  //   setInput(event.target.value);
+  // };
+
+  // useEffect(() => {
+  //   if (input === '') {
+  //     dispatch(fetchGetAllMovies());
+  //   }else {
+  //     dispatch(fetchSearchMovie(input));
+  //   }
+  // }, [input, dispatch]);
     return(
         <ReactBootStrap.Navbar collapseOnSelect expand="md" bg="dark" variant="dark" className='fixed-top'>
         <ReactBootStrap.Navbar.Brand ><Link to='/'>StreamingFlix</Link></ReactBootStrap.Navbar.Brand>
@@ -13,23 +31,13 @@ function Navbar() {
             <ReactBootStrap.Nav.Link ><Link to='/'>Home</Link></ReactBootStrap.Nav.Link>
             <ReactBootStrap.Nav.Link href="#features">TV Shows</ReactBootStrap.Nav.Link>
             <ReactBootStrap.Nav.Link href="#pricing">Movies</ReactBootStrap.Nav.Link>
-            <ReactBootStrap.NavDropdown title="My List" id="collasible-nav-dropdown">
-              <ReactBootStrap.NavDropdown.Item href="#action/3.1">Action</ReactBootStrap.NavDropdown.Item>
-              <ReactBootStrap.NavDropdown.Item href="#action/3.2">Another action</ReactBootStrap.NavDropdown.Item>
-              <ReactBootStrap.NavDropdown.Item href="#action/3.3">Something</ReactBootStrap.NavDropdown.Item>
-              <ReactBootStrap.NavDropdown.Divider />
-              <ReactBootStrap.NavDropdown.Item href="#action/3.4">Separated link</ReactBootStrap.NavDropdown.Item>
-            </ReactBootStrap.NavDropdown>
             <ReactBootStrap.Form inline>
-      <ReactBootStrap.FormControl type="text" placeholder="Search" className="mr-sm-2" />
+      <ReactBootStrap.FormControl type="text" placeholder="Search"  className="mr-sm-2" />
       <ReactBootStrap.Button variant="outline-light">Search</ReactBootStrap.Button>
     </ReactBootStrap.Form>
           </ReactBootStrap.Nav>
           <ReactBootStrap.Nav>
             <ReactBootStrap.Nav.Link> <Link to="/Login">Login</Link></ ReactBootStrap.Nav.Link>
-            {/* <ReactBootStrap.Nav.Link eventKey={2} href="#memes">
-              Dank memes
-            </ReactBootStrap.Nav.Link> */}
           </ReactBootStrap.Nav>
         </ReactBootStrap.Navbar.Collapse>
       </ReactBootStrap.Navbar>

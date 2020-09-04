@@ -13,16 +13,17 @@ function Login() {
         email: '',
         password: '',
     });
-
+// console.log(history, 'history')
+// console.log(dispatch, 'dispatch')
     const handleSubmit = (event) => {
         event.preventDefault();
         dispatch(userLogin(form, history));
     };
 
     const handleChange = (event) => {
-        setForm({ ...form, [event.target.id]: event.target.value });
+        setForm({ ...form, [event.target.name]: event.target.value });
     };
-    console.log(form)
+    // console.log(form)
 
 
     return (
@@ -70,7 +71,7 @@ function Login() {
                                             <input
                                                 className="input"
                                                 type="password"
-                                                placeholder="Kata Sandi"
+                                                placeholder="password"
                                                 id="password"
                                                 name="password"
                                                 onChange={handleChange}
@@ -79,7 +80,7 @@ function Login() {
                                         </div>
                                     </div>
                                     <button className="button is-block is-info is-fullwidth">
-                                        Login
+                                        Login{' '}
                                     </button>
                                     <br />
                                     <div className="field">
