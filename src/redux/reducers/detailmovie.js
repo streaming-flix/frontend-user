@@ -1,12 +1,10 @@
-import { GET_ALL_MOVIES, SEARCH_MOVIE } from "../actions";
+import { GET_BY_ID } from "../actions";
 
 const initialState = [];
 
 export default (state = initialState, actions) => {
     switch (actions.type) {
-        case GET_ALL_MOVIES:
-            return actions.data;
-        case SEARCH_MOVIE:
+        case GET_BY_ID:
             return actions.data;
 
         default:
