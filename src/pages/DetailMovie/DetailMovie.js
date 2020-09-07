@@ -1,7 +1,6 @@
 import React, { useEffect } from "react";
 import Navbar from "../../components/Navbar";
 import { Button, Card } from "react-bootstrap";
-import poster from "../../assets/images/Bad-genius.jpg";
 import { useSelector, useDispatch } from "react-redux";
 import { fetchGetById } from "../../redux/actions";
 import { useParams } from "react-router-dom";
@@ -36,7 +35,7 @@ function DetailMovie() {
                     </div>
                 </div>
 
-                <Button style={{ margin: "2em" }} variant="info">
+                <Button href={movie.link_full} style={{ margin: "2em" }} variant="info">
                     Watch Full Movie
                 </Button>
 
@@ -57,27 +56,27 @@ function DetailMovie() {
                             width: "14rem",
                         }}
                         variant="top"
-                        src={poster}
+                        src={movie.image_url}
                     />
-                    <Card.Text style={{ marginTop: "2rem" }}>
+                    <Card.Text style={{ marginTop: "2rem", marginLeft: "2rem", marginRight: "2rem" }}>
                         <p>
-                            Rating:
+                            Rating:<br></br>
                             {movie.rating}
                         </p>
                         <p>
-                            sipnosis:
+                            sipnosis:<br></br>
                             {movie.sipnosis}
                         </p>
                         <p>
-                            stars:
+                            stars:<br></br>
                             {movie.actor}
                         </p>
                         <p>
-                            genre:
+                            genre:<br></br>
                             {movie.genre}
                         </p>
                         <p>
-                            director:
+                            director:<br></br>
                             {movie.director}
                         </p>
                     </Card.Text>

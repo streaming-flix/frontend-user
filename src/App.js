@@ -28,7 +28,7 @@ function App() {
           <Route exact path="/Registrasi">
             <Registrasi />
           </Route>
-          <Route exact path="/DetailMovie">
+          <Route exact path="/DetailMovie/:id">
             <DetailMovie /> 
           </Route>
           <Footer/>

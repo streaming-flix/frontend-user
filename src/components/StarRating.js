@@ -1,62 +1,37 @@
 import React from 'react';
-import PropTypes from 'prop-types';
-
-const width = 110;
-
-const styles = {
-    starsInner: {
-        width: `${width}px`
-    },
-    starsEmptyInner: {
-        position: 'absolute',
-        width: `${width}px`
-    },
-    starsOuter: {
-        overflow: 'hidden'
-    },
-    star: {
-        padding: '1px'
+import StarRatings from './react-star-ratings';
+ 
+class Foo extends Component {
+    changeRating( newRating, name ) {
+      this.setState({
+        rating: newRating
+      });
     }
-};
-
-const cropWidth = (rating) => {
-    return Math.floor(rating * width / 5);
-};
-
-const StarRating = (props) => {
-
-    const containerStyle = { width: `${cropWidth(props.rating)}px` };
-
+ 
+    render() {
+      // rating = 2;
+      return (
+        <StarRatings
+          rating={this.state.rating}
+          starRatedColor="blue"
+          changeRating={this.changeRating}
+          numberOfStars={6}
+          name='rating'
+        />
+      );
+    }
+}
+ 
+ 
+class Bar extends Component {
+  render() {
+    // aggregateRating = 2.35;
     return (
-        <div>
-            <div style={styles.starsOuter}>
-                <div style={containerStyle}>
-                    <div style={styles.starsEmptyInner}>
-                        <i className="fa fa-star-o fa-lg" style={styles.star}></i>
-                        <i className="fa fa-star-o fa-lg" style={styles.star}></i>
-                        <i className="fa fa-star-o fa-lg" style={styles.star}></i>
-                        <i className="fa fa-star-o fa-lg" style={styles.star}></i>
-                        <i className="fa fa-star-o fa-lg" style={styles.star}></i>
-                    </div>
-                    <div style={styles.starsInner}>
-                        <i className="fa fa-star fa-lg" style={styles.star}></i>
-                        <i className="fa fa-star fa-lg" style={styles.star}></i>
-                        <i className="fa fa-star fa-lg" style={styles.star}></i>
-                        <i className="fa fa-star fa-lg" style={styles.star}></i>
-                        <i className="fa fa-star fa-lg" style={styles.star}></i>
-                    </div>
-                </div>
-            </div>
-        </div>
+      <StarRatings
+        rating={2.403}
+        starDimension="40px"
+        starSpacing="15px"
+      />
     );
-};
-
-StarRating.defaultProps = {
-    rating: 0
-};
-
-StarRating.propTypes = {
-    rating: PropTypes.number
-};
-
-export default StarRating;
+  }
+}
