@@ -1,27 +1,27 @@
-import React from "react";
-// , {useEffect, useState}
+import React, {useEffect, useState} from "react";
+
 import * as ReactBootStrap from "react-bootstrap";
 import {Link} from "react-router-dom";
-// import { fetchGetAllMovies, fetchSearchMovie} from '../redux/actions';
-// import { useDispatch, useSelector } from 'react-redux';
+import { fetchGetAllMovies, fetchSearchMovie} from '../redux/actions';
+import { useDispatch, useSelector } from 'react-redux';
 
 
 function Navbar() {
-  // const dispatch = useDispatch();
-  // const [input, setInput] = useState('');
-  // const movies = useSelector((state) => state.getallmovies);
+  const dispatch = useDispatch();
+  const [input, setInput] = useState('');
+  const movies = useSelector((state) => state.SearchMovie);
+console.log(movies);
+  const handleChange = (event) => {
+    setInput(event.target.value);
+  };
 
-  // const handleChange = (event) => {
-  //   setInput(event.target.value);
-  // };
-
-  // useEffect(() => {
-  //   if (input === '') {
-  //     dispatch(fetchGetAllMovies());
-  //   }else {
-  //     dispatch(fetchSearchMovie(input));
-  //   }
-  // }, [input, dispatch]);
+  useEffect(() => {
+    if (input === '') {
+      dispatch(fetchGetAllMovies());
+    }else {
+      dispatch(fetchSearchMovie(input));
+    }
+  }, [input, dispatch]);
     return(
         <ReactBootStrap.Navbar collapseOnSelect expand="md" bg="dark" variant="dark" className='fixed-top'>
         <ReactBootStrap.Navbar.Brand ><Link to='/'>StreamingFlix</Link></ReactBootStrap.Navbar.Brand>
@@ -32,7 +32,8 @@ function Navbar() {
             <ReactBootStrap.Nav.Link href="#features">TV Shows</ReactBootStrap.Nav.Link>
             <ReactBootStrap.Nav.Link href="#pricing">Movies</ReactBootStrap.Nav.Link>
             <ReactBootStrap.Form inline>
-      <ReactBootStrap.FormControl type="text" placeholder="Search"  className="mr-sm-2" />
+      <ReactBootStrap.FormControl type="text" placeholder="Search" value={input}
+                                    onChange={handleChange} className="mr-sm-2" />
       <ReactBootStrap.Button variant="outline-light">Search</ReactBootStrap.Button>
     </ReactBootStrap.Form>
           </ReactBootStrap.Nav>

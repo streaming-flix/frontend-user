@@ -1,3 +1,5 @@
+import { getAllMovies } from "./GetAllMovies";
+
 const SEARCH_MOVIE =  'SEARCH_MOVIE';
 
 const findMovie = (data) => {
@@ -22,7 +24,7 @@ const fetchSearchMovie = (input) => async (dispatch) => {
         const response = await fetch(url, options);
         const result = await response.json();
 
-        dispatch(findMovie(result));
+        dispatch(getAllMovies(result));
     } catch (error) {
         console.log(error);
     }
