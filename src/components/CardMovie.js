@@ -11,6 +11,7 @@ const CardMovie = () => {
     useEffect(() => {
         dispatch(fetchGetAllMovies());
     }, [dispatch]);
+    
     return (
         <div style={{ display: "flex", margin: "2em", padding: "2em" }}>
             {movie.result !== undefined &&
@@ -20,8 +21,8 @@ const CardMovie = () => {
                             className="my-carousel"
                             style={{
                                 display: "flex",
-                                padding: "2em",
-                                margin: "2em",
+                                padding: "10px",
+                                margin: "10px",
                             }}
                         >
                             <Link

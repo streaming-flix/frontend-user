@@ -81,6 +81,16 @@ const register = (formData, history) => async (dispatch) => {
     dispatch(registerUser(result));
 };
 
+const logout = (history) => async () => {
+    Swal.fire({
+        icon: "success",
+        title: "Logout succes",
+    });
+    localStorage.removeItem("token");
+    history.push("/");
+};
+
+
 
 export {
     getUserLogin,
@@ -89,4 +99,5 @@ export {
     REGISTER_USER,
     register,
     registerUser,
+    logout,
 };

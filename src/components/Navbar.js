@@ -29,12 +29,12 @@ console.log(movies);
         <ReactBootStrap.Navbar.Collapse id="responsive-navbar-nav">
           <ReactBootStrap.Nav className="mr-auto">
             <ReactBootStrap.Nav.Link ><Link to='/'>Home</Link></ReactBootStrap.Nav.Link>
-            <ReactBootStrap.Nav.Link href="#features">TV Shows</ReactBootStrap.Nav.Link>
-            <ReactBootStrap.Nav.Link href="#pricing">Movies</ReactBootStrap.Nav.Link>
+            {/* <ReactBootStrap.Nav.Link href="#features">TV Shows</ReactBootStrap.Nav.Link>
+            <ReactBootStrap.Nav.Link href="#pricing">Movies</ReactBootStrap.Nav.Link> */}
             <ReactBootStrap.Form inline>
       <ReactBootStrap.FormControl type="text" placeholder="Search" value={input}
                                     onChange={handleChange} className="mr-sm-2" />
-      <ReactBootStrap.Button variant="outline-light">Search</ReactBootStrap.Button>
+      {/* <ReactBootStrap.Button variant="outline-light">Search</ReactBootStrap.Button> */}
     </ReactBootStrap.Form>
           </ReactBootStrap.Nav>
           <ReactBootStrap.Nav>

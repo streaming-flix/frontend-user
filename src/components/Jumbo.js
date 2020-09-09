@@ -18,7 +18,7 @@ const Jumbo = () => {
           <MDBView>
           <img
               className="d-block w-100"
-              src="https://mdbootstrap.com/img/Photos/Slides/img%20(6).jpg"
+              src="https://snagfilms-a.akamaihd.net/7fa0ea9a-9799-4417-99f5-cbb5343c551d/images/39/21/f62be1684f9082b59898bdf53034/1574342291004_thecabinguard_jumbotron_01resized_16x9Images.jpg"
               alt="Second slide"
             />
           <MDBMask overlay="black-light" />
@@ -32,7 +32,7 @@ const Jumbo = () => {
           <MDBView>
             <img
               className="d-block w-100"
-              src="https://mdbootstrap.com/img/Photos/Slides/img%20(6).jpg"
+              src="https://www.tentangsinopsis.com/wp-content/uploads/2020/08/Daftar-Lengkap-Nama-Pemain-Bad-Genius-The-Series-Beserta-Biodatanya.jpg"
               alt="Second slide"
             />
           <MDBMask overlay="black-strong" />
@@ -46,7 +46,7 @@ const Jumbo = () => {
           <MDBView>
             <img
               className="d-block w-100"
-              src="https://mdbootstrap.com/img/Photos/Slides/img%20(9).jpg"
+              src="https://www.sonoma.edu/sites/www/files/field/image/avengers.jpg"
               alt="Third slide"
             />
           <MDBMask overlay="black-slight" />

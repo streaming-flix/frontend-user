@@ -61,7 +61,7 @@ function DetailMovie() {
                     <Card.Text style={{ marginTop: "2rem", marginLeft: "2rem", marginRight: "2rem" }}>
                         <p>
                             Rating:<br></br>
-                            {movie.rating}
+                            {movie.rating}/10
                         </p>
                         <p>
                             sipnosis:<br></br>
