@@ -14,7 +14,7 @@ function DetailMovie() {
     useEffect(() => {
         dispatch(fetchGetById(id));
         // eslint-disable-next-lines
-    }, [dispatch]);
+    }, [dispatch, id]);
     return (
         <>
             <Navbar />
