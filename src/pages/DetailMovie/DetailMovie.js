@@ -13,7 +13,6 @@ function DetailMovie() {
 
     useEffect(() => {
         dispatch(fetchGetById(id));
-        // eslint-disable-next-lines
     }, [dispatch, id]);
     return (
         <>
